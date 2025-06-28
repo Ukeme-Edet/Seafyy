@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Squid Game Downloader</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <h1>Squid Game Season 3 Downloads</h1>
+            <p class="explanation">
+                Clicking "Download" will attempt to initiate the download
+                directly. Your browser's security settings or ad-blockers might
+                interfere, or the remote server might require additional
+                interaction.
+            </p>
+            <div id="movie-links"></div>
+        </div>
+
+        <form
+            id="downloadForm"
+            method="POST"
+            target="_blank"
+            style="display: none"
+        >
+            <input type="hidden" name="op" value="download2" />
+            <input type="hidden" name="id" id="formId" />
+            <input type="hidden" name="rand" value="" />
+            <input
+                type="hidden"
+                name="referer"
+                value="https%3A%2F%2Fnkiri.com%2F"
+            />
+            <input type="hidden" name="method_free" value="" />
+            <input type="hidden" name="method_premium" value="" />
+        </form>
+
+        <script src="script.js"></script>
+    </body>
+</html>
